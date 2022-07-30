@@ -15,25 +15,25 @@ function toCommas(x) {
 exports.allMenu = (ucapanWaktu, pushname, mundur, upload, download, ownerName, botName, jam, tanggal, runtime, isCreator, isPremium, sender, limitCount, limit, gcount, glimit, balance, prefix) => {
     return`${ucapanWaktu} ${pushname !== undefined ? pushname : 'Kak'}
 
-𝐗𝐢𝐧𝐳𝐮𝐨_𝐁𝐨𝐭𝐳 Powered By Denzz
+––––––『 *LIST MENU* 』––––––
 
 *S T A T I S T I C*
- ⬣ *ᴅᴏᴡɴʟᴏᴀᴅ *: *${download}*
- ⬣ *ᴜᴘʟᴏᴀᴅ* : *${upload}*
+ • *ᴅᴏᴡɴʟᴏᴀᴅ*: ${download}
+ • *ᴜᴘʟᴏᴀᴅ* : ${upload}
 
 *B O T  I N F O*
- ⬣ *ᴄʀᴇᴀᴛᴏʀ:* : *${ownerName}*
- ⬣ *ɴᴀᴍᴀ ʙᴏᴛ:* : *${botName}*
- ⬣ *ᴛɪᴍᴇ:* *${jam}*
- ⬣ *ᴅᴀᴛᴇ:* *${tanggal(new Date())}*
- ⬣ *ʀᴜɴᴛɪᴍᴇ:* : *${runtime(process.uptime())}*
+ • *ᴄʀᴇᴀᴛᴏʀ:* ${ownerName}
+ • *ɴᴀᴍᴀ ʙᴏᴛ:* ${botName}
+ • *ᴛɪᴍᴇ:* ${jam}
+ • *ᴅᴀᴛᴇ:* ${tanggal(new Date())}
+ • *ʀᴜɴᴛɪᴍᴇ:* ${runtime(process.uptime())}
 
 *I N F O  U S E R*
- ⬣ *ɴᴀᴍᴇ:* ${pushname !== undefined ? pushname : '-'}
- ⬣ *sᴛᴀᴛᴜs:* ${isCreator ? 'Owner' : isPremium ? 'Premium' : 'Free'}
- ⬣ *ʟɪᴍɪᴛ:* ${isCreator ? '-' : isPremium ? 'Unlimited' : getLimit(sender, limitCount, limit)}
- ⬣ *ʟɪᴍɪᴛ ɢᴀᴍᴇ:* ${isCreator ? '-' : cekGLimit(sender, gcount, glimit)}
- ⬣ *ʙᴀʟᴀɴᴄᴇ:* ${toCommas(getBalance(sender, balance))}
+ • *ɴᴀᴍᴇ:* ${pushname !== undefined ? pushname : '-'}
+ • *sᴛᴀᴛᴜs:* ${isCreator ? 'Owner' : isPremium ? 'Premium' : 'Free'}
+ • *ʟɪᴍɪᴛ:* ${isCreator ? '-' : isPremium ? 'Unlimited' : getLimit(sender, limitCount, limit)}
+ • *ʟɪᴍɪᴛ ɢᴀᴍᴇ:* ${isCreator ? '-' : cekGLimit(sender, gcount, glimit)}
+ • *ʙᴀʟᴀɴᴄᴇ:* ${toCommas(getBalance(sender, balance))}
 
 𝙷𝚒𝚝𝚞𝚗𝚐 𝚖𝚞𝚗𝚍𝚞𝚛 𝚔𝚎𝚖𝚎𝚛𝚍𝚎𝚔𝚊𝚊𝚗 𝙸𝚗𝚍𝚘𝚗𝚎𝚜𝚒𝚊🇮🇩
 ${mundur}
